@@ -5,9 +5,11 @@ import iconPath from '../assets/recycle-bin.png';
 import { ReactComponent as RightArrowIcon } from '../assets/right-arrow-icon.svg';
 import redRecycleBinIcon from '../assets/red-recycle-bin.png';
 import Switch from '@mui/material/Switch';
+import { useNavigate } from 'react-router-dom';
 
 export const RecyclingMap = () => {
     const center = [-33.490407454312944, -70.61895304950984];
+    const navigate = useNavigate();
 
     const positions = [
         [-33.49003697221194, -70.61731383635664, true],
@@ -28,6 +30,10 @@ export const RecyclingMap = () => {
         setChecked(event.target.checked);
     };
 
+    const handleClick = (index) => {
+        navigate(`/recycling-points/details/${index}`);
+    };
+
     return (
         <>
             <MapContainer center={center} zoom={15} style={{ width: '100%', height: '91vh' }}>
@@ -46,8 +52,11 @@ export const RecyclingMap = () => {
                     >
                         <Popup>
                             <div>
-                                <div style={{ display: 'flex', alignItems: 'center' }}>
-                                    <h4 style={{ textDecoration: 'underline' }}>Ver Información</h4>
+                                <div 
+                                    style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }} 
+                                    onClick={() => handleClick(index)}
+                                >
+                                    <h4 style={{ textDecoration: 'underline', margin: 0 }}>Ver Información</h4>
                                     <RightArrowIcon />
                                 </div>
                                 <div style={{ display: 'flex', alignItems: 'center' }}>

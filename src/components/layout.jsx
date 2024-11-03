@@ -6,6 +6,7 @@ import HomePage from '../pages/home_page'
 import NavBar from '../components/nav_bar'
 import { RecyclingMap } from '../pages/recycling_map'
 import { BinDetails } from '../pages/bin_details'
+import { Article } from '../pages/article'
 
 const Layout = () => {
   return (
@@ -14,7 +15,8 @@ const Layout = () => {
         <NavBar />
         <div className='layout__page'>
           <Routes>
-            <Route path='/' element={<HomePage />} />
+            <Route path='/' element={<HomePage />} /> 
+            <Route path='/article/:id' element={<Article/>}/>
             <Route path='/recycling-points' element={<RecyclingMap/>}/>
             <Route path='/recycling-points/details/:id' element={<BinDetails/>}/>
           </Routes>

@@ -1,5 +1,6 @@
 .nav-bar {
   display: flex;
+  align-items: center;
   background-color: #28c45c;
 }
 
@@ -7,4 +8,19 @@
   padding-left: 20px;
   font-size: 20px;
   color: white;
+}
+
+.nav-bar__back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+  margin-left: auto; /* Empuja el botón hacia el extremo derecho */
+  margin-right: 20px;
+}
+
+.nav-bar__back-button:hover {
+  color: #0056b3;
 }

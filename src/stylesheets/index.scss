@@ -2,7 +2,6 @@
 
 @import './layout/index.scss';
 @import './nav-bar/index.scss';
-@import './lightbulb-page/index.scss';
 
 html, body {
   padding: 0;
@@ -24,16 +23,19 @@ html, body {
   flex-direction: column;
   justify-content: center;
   padding: 20px;
+  margin-bottom: 30px;
 
   .card {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 15px;
+    padding: 5px 10px;
+    color: inherit;
     background-color: #fffcc4;
     border-radius: 10px;
     margin: 10px 0;
     gap: 10px;
+    text-decoration: none;
   
     img {
       border-radius: 8px;
@@ -72,4 +74,12 @@ html, body {
 
 .recycling_map__layout {
   padding: 10px;
+}
+
+.home_page_container{
+  display: block;
+}
+
+.bold-uppercase {
+  font-weight: bold;
 }
