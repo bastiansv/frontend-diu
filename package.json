@@ -14,10 +14,13 @@
   "author": "alexarenasf",
   "license": "MIT",
   "dependencies": {
-    "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.6",
+    "leaflet": "^1.9.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
     "react-redux": "^7.2.5",
     "react-router-dom": "^6.4.0"
   },
@@ -26,6 +29,7 @@
     "@babel/eslint-plugin": "^7.16.5",
     "@babel/preset-env": "^7.17.12",
     "@babel/preset-react": "^7.14.5",
+    "@svgr/webpack": "^8.1.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",

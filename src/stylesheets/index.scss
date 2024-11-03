@@ -12,3 +12,64 @@ html, body {
 * {
   font-family: 'Open Sans', sans-serif;
 }
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #fffcc4;
+    border-radius: 10px;
+    margin: 10px 0;
+    gap: 10px;
+  
+    img {
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    p {
+      margin: 0;
+      font-size: small;
+      font-weight: bold;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+
+  button {
+    background-color: #28c45c;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    padding: 8px 70px;
+    cursor: pointer;	
+
+    &:hover {
+      background-color: #1f8b4c;
+    }
+  }
+}
+
+.recycling_map__layout {
+  padding: 10px;
+}

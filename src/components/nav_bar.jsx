@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 
 export const NavBar = () => {
   const navLinkClass = ({ isActive }) => {
@@ -9,18 +8,9 @@ export const NavBar = () => {
   }
   return (
     <nav className='nav-bar'>
-      <NavLink
-        className={navLinkClass}
-        to='/'
-      >
-        Inicio
-      </NavLink>
-      <NavLink
-        className={navLinkClass}
-        to='/lightbulb'
-      >
-        Ampolleta
-      </NavLink>
+      <h2 className='nav-bar__title'>
+        Recicla Fácil
+      </h2>
     </nav>
   )
 }
