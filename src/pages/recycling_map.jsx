@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import iconPath from '../assets/recycle-bin.png';  
 import { ReactComponent as RightArrowIcon } from '../assets/right-arrow-icon.svg';
 import redRecycleBinIcon from '../assets/red-recycle-bin.png';
+import grinRecycleBinIcon from '../assets/recycle-bin.png';
 import Switch from '@mui/material/Switch';
 import { useNavigate } from 'react-router-dom';
 
@@ -71,6 +72,39 @@ export const RecyclingMap = () => {
                         </Popup>
                     </Marker>
                 ))}
+                <div style={{
+                    display:"flex",
+                    flexDirection:"column",
+                    position: 'absolute',
+                    top: '10px',
+                    right: '10px',
+                    backgroundColor: 'white',
+                    padding: '10px',
+                    borderRadius: '5px',
+                    boxShadow: '0 2px 5px rgba(0,0,0,0.3)',
+                    zIndex: 1000
+                }}>
+                    <div style={{
+                        display:"flex",
+                        alignContent:"center",
+                        gap:"4px"
+                    
+                    }}>
+                    <img style={{width:"30px",height:"30px"}} src={grinRecycleBinIcon} alt="" /> 
+                    <p>Contenedor disponible</p>   
+
+                    </div>
+                    <div style={{
+                        display:"flex",
+                        alignContent:"center",
+                        gap:"4px"
+                    
+                    }}>
+                    <img style={{width:"32px",height:"32px"}} src={redRecycleBinIcon} alt="" /> 
+                    <p>Contenedor lleno</p>   
+
+                    </div>
+                </div>
             </MapContainer>
         </>
     );
