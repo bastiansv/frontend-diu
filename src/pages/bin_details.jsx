@@ -13,7 +13,7 @@ const BinDetailsList = [
     {
         id: 2,
         title: 'Contenedor Plaza Central',
-        status: 7,
+        status: 10,
         allowedWaste: ['Plástico', 'Metal', 'Orgánico'],
         schedule: 'Abierto entre 9:00 y 17:00 de lunes a viernes'
     },
@@ -27,7 +27,7 @@ const BinDetailsList = [
     {
         id: 4,
         title: 'Contenedor Avenida Sur',
-        status: 6,
+        status: 10,
         allowedWaste: ['Plástico', 'Papel', 'Metal'],
         schedule: 'Abierto entre 11:00 y 19:00 de lunes a viernes'
     },
